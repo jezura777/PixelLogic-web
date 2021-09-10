@@ -1,11 +1,10 @@
 # PixelLogic
 
-PixelLogic official wesite version 0.1
+PixelLogic official wesbite version 0.1
 
 ## Browser Support
 
 Firefox, Google
-
 
 ## Contributing
 
