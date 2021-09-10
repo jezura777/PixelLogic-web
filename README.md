@@ -1,6 +1,6 @@
 # PixelLogic
 
-PixelLogic official wesbite version 0.1
+PixelLogic official website version 0.1
 
 ## Browser Support
 
