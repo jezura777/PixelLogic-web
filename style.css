@@ -23,7 +23,8 @@
 html {
 
     box-sizing: border-box;
-    color: var(--clr-primary);
+    color: white;
+    background: var(--clr-primary);
 
 }
 
@@ -52,6 +53,12 @@ section {
    Typografy 
 ===============
 */
+
+.str {
+
+    color: var(--clr-text-string);
+
+}
 
 h1,
 h2,
@@ -96,7 +103,7 @@ a {
 
 .text-primary {
 
-    color: var(--clr-primary);
+    color: var(--clr-text-string);
 
 }
 
@@ -119,6 +126,7 @@ a {
 header {
 
     padding: 1em 0 2em;
+    background: var(--clr-accent);
 
 }
 
@@ -137,7 +145,7 @@ nav a {
 
     display: inline-block;
     padding: 0.5em;
-    color: var(--clr-primary);
+    color: var(--clr-text-function);
     text-decoration: none;
     transition: all 250ms ease-in-out;
     font-weight: 900;
@@ -147,7 +155,7 @@ nav a {
 nav a:hover,
 nav a:focus {
 
-    color: var(--clr-accent);
+    color: var(--clr-text-hover);
     text-decoration: underline;
 
 }
@@ -158,11 +166,11 @@ nav a:focus {
 =============
 */
 
-.btn-group {
+/* .btn-group {
 
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     flex-direction: column;
 
 }
@@ -193,7 +201,7 @@ nav a:focus {
     
     background: var(--clr-primary);
 
-}
+} */
 /*
 ===================
   Homepage styles 
@@ -220,31 +228,30 @@ nav a:focus {
 
 .intro {
 
-    background-color: #333;
-    background-image: url(assets/images/pexels-markus-spiske-1089438.jpg);
+    background-color: var(--clr-primary);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-size: cover;
-    color: var(--light-clr);
+    color: var(--clr-text-string);
     text-align: center;
     padding: 15vh 1em;
 
 }
 
 
-.about-me {
+.about-us {
 
     background-color: var(--clr-accent);
 
     display: flex;
     flex-direction: column;
-    color: var(--light-clr);
+    color: var(--clr-text-string);
     font-weight: 500;
     padding: 0;
 
 }
 
-.about-me__intro {
+.about-us__intro {
 
     background-color: var(--clr-accent);
     background-image: url(assets/images/software-3682509.jpg);
@@ -255,23 +262,23 @@ nav a:focus {
 
 }
 
-.about-me__body {
+.about-us__body {
 
     padding: 1.5em 1em 3em;
 
 }
 
-.download-projects {
+/* .download-projects {
 
     background: #bbbbbb;
 
-}
+} */
 
 footer {
 
     background: #333;
     padding: 3em 1em;
-    color: white;
+    color: var(--clr-text-function);
     display: flex;
     flex-direction: column;
     margin-top: 5em;
@@ -311,7 +318,7 @@ footer a {
 .footer-nav a:focus {
 
     text-decoration: underline;
-    color: var(--clr-primary);
+    color: var(--clr-text-hover);
     opacity: 1;
 
 }
@@ -343,14 +350,14 @@ footer a {
 
     }
 
-    .about-me {
+    .about-us {
 
         flex-direction: row;
 
     }
 
-    .about-me__intro,
-    .about-me__body {
+    .about-us__intro,
+    .about-us__body {
 
         flex: 0 1 50%;
         display: flex;
@@ -360,28 +367,28 @@ footer a {
 
     }
 
-    .about-me__intro {
+    .about-us__intro {
 
         text-align: right;
 
 
     }
 
-    .about-me__intro > * {
+    .about-us__intro > * {
 
         max-width: 27rem;
         margin-left: auto;
 
     }
 
-    .about-me__body {
+    .about-us__body {
 
         text-align: left;
 
 
     }
 
-    .about-me__body > * {
+    .about-us__body > * {
 
         max-width: 27rem;
         margin-right: auto;
@@ -415,7 +422,7 @@ footer a {
 
 ::-webkit-scrollbar-thumb {
 
-    background: var(--dark-clr);
+    background: var(--clr-accent);
     border-radius: 2.5px;
     width: 5px;
 
@@ -423,7 +430,7 @@ footer a {
 
 ::-webkit-scrollbar-track {
 
-    background: #555;
+    background: var(--clr-primary);
 
 }
 
